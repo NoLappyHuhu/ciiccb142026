@@ -30,3 +30,13 @@ class ClassZ {
         acm1.greetMe4();
     }
 }
+
+class OptionalExceptionList{
+    void noException(){}
+    void oneException()throws RuntimeException{
+
+    }
+    void twoOrMoreException()throws RuntimeException, MatchException, ArithmeticException{
+        
+    }
+}
