@@ -7,6 +7,8 @@ public class ConstructorLesson {
         Hamster hamster1 = new Hamster(2);
         Hamster hamster2 = new Hamster(2,"White");
         Hamster hamster3 = new Hamster();
+        Swan monther = new Swan();
+        monther.setNumberEggs(-21);
         System.out.println();
     }
 }
@@ -46,5 +48,19 @@ class InitializationOrderSimple {
     } 
     public static void main(String[] args) {
         InitializationOrderSimple init = new InitializationOrderSimple();
+    }
+}
+class Swan{
+    private int numberEggs;
+    public int getNumberEggs(){
+        return numberEggs;
+    }
+    public void setNumberEggs(int i){
+        if(i>0){
+            numberEggs=i;
+        }
+        else{
+            // throw RuntimeException("OMG, You cant set NumEggs to lower that 0!!!!!");
+        }
     }
 }
